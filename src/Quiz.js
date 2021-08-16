@@ -10,9 +10,9 @@ class Quiz extends Component {
   }
   render() {
     return (
-      <QuizQuestion className = "QuizQuestion" quiz_question={{quiz_question: quizData.quiz_questions[this.state.quiz_position - 1]}}>
-        <div className = "QuizQuestion">{quizData.quiz_questions[0].instruction_text}</div>
-      </QuizQuestion>
+      <div>
+        <QuizQuestion className = "QuizQuestion" quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/>
+      </div>
     )
   }
 }
